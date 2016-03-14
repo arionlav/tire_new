@@ -1,0 +1,911 @@
+body {
+    font-family: Calibri, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 1px dotted;
+}
+::selection {
+    background: #ffcc99;
+}
+::-moz-selection {
+    background: #ffcc99;
+}
+.hidden {
+    display: none;
+}
+/*border: 1px solid red;*/
+/*-------------------------	Форма загрузки прайса -------------------------*/
+
+div.form {
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    color: midnightblue;
+}
+input {
+    display: block;
+}
+input#submit {
+    height: 50px;
+    width: 300px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    color: midnightblue;
+}
+input#file {
+    color: midnightblue;
+    margin-top: 15px;
+}
+select#idList, select#idRole {
+    margin: 8px 0;
+    width: 300px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: midnightblue;
+    line-height: 50px;
+}
+#list option {
+    margin-top: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+div.form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+div.dropRowDiv {
+    float: left;
+    position: absolute;
+    margin-top: -50px;
+    right: 40px;
+}
+div.dropRowDiv a {
+    color: crimson;
+}
+
+
+#scriptTime {
+    text-align: center;
+    font-size: 12px;
+    color: midnightblue;
+    margin: 10px 0 20px 0;
+}
+h3, h1, h2 {
+    margin: 30px auto;
+    text-align: center;
+    color: midnightblue;
+}
+hr {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#reductor {
+    border: 1px solid #666677;
+}
+#reductor td, #reductor th {
+    color: midnightblue;
+    font: 14px Calibri, sans-sefif;
+    border: 1px solid #666677;
+    padding: 10px 5px;
+}
+#prevNextDiv {
+    margin: 20px auto 50px auto;
+    width: 90%;
+    text-align: center;
+    font-size: 24px;
+    color: midnightblue;
+}
+#prevNextDiv a {
+    display: inline-block;
+    color: midnightblue;
+    height: 30px;
+    margin: 7px 0 0 10px;
+}
+#prevNextDiv a:hover {
+    border: none;
+    color: cornflowerblue;
+}
+#prevNextDiv a.nextPrev {
+    height: 30px;
+    width: 140px;
+}
+#prevNextDiv .pagerNumber {
+    margin-left: 10px;
+}
+#prevNextDiv .pagerNumberCurrent {
+    font-size: 32px;
+    color: gray;
+}
+
+td#linkReductor a {
+    color: crimson;
+}
+
+thead tr, td.firstTd {
+    background-color: #ffeed2;
+}
+
+div#selectItems {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 10px 30px 200px;
+    border-bottom: 1px dotted midnightblue;
+    border-top: 1px dotted midnightblue;
+}
+#selectItems ul li {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 12px;
+    background: url("../img/list.gif") -6px 0 no-repeat;
+    list-style: none;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+#selectItems ul li a {
+    color: midnightblue;
+}
+#selectItems ul li:hover {
+    padding-left: 20px;
+    background: url("../img/list.gif") 5px 20px no-repeat;
+}
+#selectItems ul li a:hover {
+    border-bottom: none;
+    color: cornflowerblue;
+}
+
+.log {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../img/loading_05.gif') 50% 50% no-repeat rgb(255,255,255);
+}
+
+.navigationTop {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 -20px 0;
+}
+.navigationTop a {
+    color: #aaaaaa;
+}
+.navigationTop a:hover {
+    color: cornflowerblue;
+}
+.navigationTop span {
+    color: #cccccc;
+}
+
+.errorLinks {
+    text-align: center;
+    margin-top: 5%;
+    font: 16px 'Calibri';
+    line-height: 25px;
+}
+.errorLinks a {
+    color: midnightblue;
+    text-decoration: none;
+    padding-top: 10px;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+.errorLinks a:hover {
+    color: cornflowerblue;
+}
+.errorLinksHead {
+    text-align: center;
+    margin-top: 5%;
+    color: crimson;
+    font: 20px 'Calibri'
+}
+
+
+
+
+
+.rowInSelect {
+    width: 400px;
+    float: left;
+    display: none;
+}
+.formSelect label {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 360px;
+}
+.formSelect select {
+    width: 400px;
+    height: 460px;
+    padding: 15px;
+    font: 18px 'Calibri';
+    border: 1px dotted lightgrey;
+    color: lightslategray;
+}
+.formSelect input {
+    clear: both;
+}
+.formSelect #listSelect {
+    width: 300px;
+}
+.formSelect #listSelect select {
+    width: 300px;
+}
+
+.formSelect .rowInText {
+    margin: 20px;
+    float: left;
+    text-align: left;
+    width: 250px;
+}
+.formSelect .rowInText input {
+    width: 340px;
+    height: 10px;
+    padding: 10px;
+    color: lightslategray;
+    border: 1px solid lightgrey;
+ }
+h1#resultH1 {
+    display: block;
+    margin-top: 0;
+    padding: 25px 0 0 0;
+    text-align: center;
+}
+a#resultImg {
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: url("../img/excelLogoBlue.png") no-repeat;
+    top: 35px;
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+a#resultImg:hover {
+    background: url("../img/excelLogo.png") no-repeat;
+    border: none;
+}
+
+.display {
+    display: block;
+}
+.displayNone {
+    display: none;
+}
+.marginLeft {
+    margin-left: 20px;
+}
+.showLink {
+    cursor: pointer;
+}
+.showLink strong {
+    color: crimson;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.searchContainer {
+    margin: 30px auto;
+    width: 1050px;
+    color: midnightblue;
+}
+.searchRowAll {
+    height: 530px;
+    float: left;
+}
+.rowOne {
+    width: 250px;
+}
+.rowTwo {
+    width: 390px;
+    position: relative;
+}
+.rowThree {
+    width: 400px;
+    margin-left: 10px;
+    position: relative;
+}
+.iddA {
+    display: inline-block;
+    cursor: pointer;
+    padding: 3px 0 0 20px;
+    height: 27px;
+    width: 90%;
+    font-size: 18px;
+    color: midnightblue;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+#idd a:hover {
+    border: none;
+    margin-left: 7px;
+    color: #3758ff;
+    background: url("../img/list.gif") 5px 12px no-repeat;
+}
+.selectsBorderBottom {
+    border-bottom: 1px dotted lightgray;
+}
+.clickLinkSearch {
+    border: none;
+    margin-left: 7px;
+    color: #3758ff;
+    background: url("../img/list.gif") 5px 12px no-repeat;
+}
+div.rowThree div.rowThreeField {
+    padding: 6px 0 5px 40px;
+    font-size: 14px;
+}
+.rowThree div.queryParam {
+    float: left;
+    width: 150px;
+    clear: left;
+}
+.rowThree div.refresh {
+    font-style: italic;
+    color: #3758ff;
+}
+input#reset {
+    margin: 10px 0 0 40px;
+    height: 30px;
+    width: 180px;
+}
+input#reset {
+    margin: 25px 0 0 40px;
+    height: 30px;
+    width: 180px;
+}
+
+input#submitSearch {
+    margin: 10px 0 0 45px;
+    height: 50px;
+    width: 300px;
+    bottom: 0;
+    position: absolute;
+}
+
+input[type='submit'].acceptChangeButton {
+    height: 40px;
+    width: 350px;
+    margin: 20px auto;
+}
+
+/* Get Search result */
+
+a.closeSearchResult {
+    display: block;
+    position: fixed;
+    top: -7px;
+    right: 10%;
+    background-color: indianred;
+    height: 30px;
+    width: 235px;
+    padding: 5px 0 0 20px;
+    color: white;
+    opacity: 0.5;
+    border: 1px dotted indianred;
+    -moz-border-radius: 0 0 25px 25px;
+    -webkit-border-radius:0px 0 25px 25px;
+    border-radius:0px 0 25px 25px;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+a.closeSearchResult:hover {
+    opacity: 0.85;
+    top: 0;
+}
+#searchParam {
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px 10px 30px 100px;
+    color: midnightblue;
+    border-bottom: 1px dotted midnightblue;
+    border-top: 1px dotted midnightblue;
+}
+#searchParamDiv {
+    margin: 5px 0;
+}
+#searchParamDiv em {
+    color: #3758ff;
+}
+#searchParamDiv span {
+    display: block;
+    float: left;
+    width: 180px;
+}
+
+table#reductor thead tr th a {
+    color: midnightblue;
+}
+table#reductor thead tr th a:hover {
+    color: #3758ff;
+}
+div.tableContent {
+    width: 98%;
+    margin: 0 auto;
+}
+
+td.priceUp {
+    background: url("../img/priceUp.png") 50% 50% no-repeat;
+    text-align: center;
+    color: crimson
+}
+td.priceDown {
+    background: url("../img/priceDown.png") 50% 50% no-repeat;
+    text-align: center;
+    color: #37932e
+}
+td.priceStay {
+    background: url("../img/priceStay.png") 50% 50% no-repeat;
+    text-align: center;
+}
+
+
+/* Catalog */
+.formCatalog select {
+    width: 400px;
+    height: 315px;
+    padding: 15px;
+    font: 18px 'Calibri';
+    border: 1px dotted lightgrey;
+    color: lightslategray;
+}
+.formCatalog input {
+    display: block;
+    float: left;
+}
+.formCatalog #listSelect {
+    width: 350px;
+}
+.formCatalog #listSelect select {
+    width: 300px;
+}
+
+.formCatalog .rowInText {
+    margin: 20px;
+    float: left;
+    text-align: left;
+    width: 250px;
+}
+.formCatalog .rowInText input {
+    width: 340px;
+    height: 10px;
+    padding: 10px;
+}
+.addDeleteInputs {
+    width: 250px;
+    float: left;
+}
+.addDeleteInputs input {
+    padding: 0 0 10px 15px;
+    margin-top: 14px;
+}
+.addDeleteInputs label {
+    display: block;
+    padding: 0 0 10px 30px;
+    margin-top: 10px;
+}
+.rowTwoCatalog {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+#rowInsertParam {
+    float: left;
+    margin-left: 40px;
+    width: 400px;
+    height: 320px;
+}
+#rowInsertParam label {
+    display: block;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+}
+#rowInsertParam input, .inputText {
+    width: 230px;
+    height: 10px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.labelTwo {
+    margin-top: 40px;
+}
+
+
+
+
+
+
+#moreParams {
+    display: block;
+    position: fixed;
+    bottom: -7px;
+    right: 10%;
+    background-color: indianred;
+    height: 30px;
+    width: 160px;
+    padding: 5px 0 0 20px;
+    color: white;
+    opacity: 0.5;
+    border: 1px dotted indianred;
+    -moz-border-radius: 25px 25px 0 0;
+    -webkit-border-radius: 25px 25px 0 0;
+    border-radius:25px 25px 0 0;
+
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+
+#moreParams:hover {
+    opacity: 0.85;
+    bottom: 0;
+    cursor: pointer;
+}
+.selectCustomWrite {
+    text-align: center;
+}
+.selectCustomWrite p {
+    margin: 0 0 8px 0;
+}
+.selectCustomWrite input {
+    margin: 0 auto 8px auto;
+    color: lightslategray;
+}
+#selectsContent div.fewHeight select {
+    height: 365px;
+}
+
+#reductor td.borderLeft, #reductor th.borderLeft {
+    border-left: 4px double #666677;
+}
+
+div.hr {
+    border-bottom: 1px dotted #aaaaaa;
+    width: 80%;
+    margin: 30px 20px 20px 20px;
+}
+.universalFullContainer {
+    width: 750px;
+    margin: 0 auto;
+    color: midnightblue;
+}
+.universalFullContainer label span, div.form label span {
+    color: #aaaaaa;
+    font-style: italic;
+    font-size: 14px;
+}
+.inputRadio {
+    padding: 5px;
+}
+.inputRadio input {
+    float: left;
+    clear: left;
+    margin-top: 15px;
+}
+.inputRadio label {
+    display: block;
+    margin: 10px 0 0 30px;
+}
+.formInputText {
+    color: lightslategrey;
+    padding: 8px;
+    width: 250px;
+    margin: 5px 0 10px 0;
+}
+.formInputTextPriceChange {
+    color: lightslategrey;
+    padding: 6px;
+    width: 284px;
+    margin: 5px 0 10px 0;
+}
+label.labelRadio strong {
+    color: crimson;
+    font-size: 18px;
+}
+label.labelRadio em {
+    color: #3758ff;
+    font-weight: bold;
+}
+label.priceChangeLabel {
+    margin-top: 16px;
+}
+a.addParam {
+    cursor: pointer;
+    color: #5c8ece;
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+}
+a.addParam:hover {
+    color: crimson;
+    border: none;
+}
+
+
+
+.universalSelects select {
+    height: 35px;
+    padding: 5px;
+    width: 200px;
+    font-size: 14px;
+    color: midnightblue;
+    clear: both;
+    margin: 10px 0 10px 25px;
+}
+
+.universalFullContainer h4 {
+    margin: 0 0 0 15px;
+    color: midnightblue;
+    font-size: 20px;
+}
+.hrSecond {
+    border-bottom: 1px dotted lightgrey;
+    height: 10px;
+    margin: 0 0 10px 10px;
+    width: 300px;
+}
+
+
+
+
+select.idList {
+    margin: 8px 0;
+    width: 300px;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    color: midnightblue;
+    line-height: 50px;
+}
+
+
+.returnMessage {
+    text-align: center;
+    color: crimson;
+}
+
+#noticeForPetr {
+    text-align: left;
+    font-style: italic;
+    display: none;
+}
+#noticeForPetr p em {
+    color: crimson;
+}
+#noticeForPetr p span {
+    color: #3758ff;
+}
+
+
+
+
+
+/*---------LEAN MODAL---------*/
+
+.signUp h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 8px;
+}
+
+.signUp label {
+    display: inline-block;
+    float: left;
+    margin-top: 15px;
+    color: #000000;
+}
+label#camera, label#str {
+    margin-top: 4px;
+}
+.signUp input, .signUp select {
+    margin: 10px 0 0 130px;
+    display: block;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+}
+.signUp input[type='submit'] {
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    cursor: pointer;
+    height: 50px;
+    width: 350px;
+    margin: 30px auto;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.signUp input[type='submit']:hover {
+    background-color: #cccccc;
+}
+.signUp select {
+    height: 30px;
+    width: 350px;
+    color: midnightblue;
+}
+.signUp input {
+    height: 25px;
+    width: 336px;
+    color: midnightblue;
+}
+.signUp h2 {
+    color: #000000;
+}
+.signUp h2 span {
+    color: crimson;
+}
+.signUp span.littleSpan {
+    font-size: 14px;
+    color: midnightblue;
+    font-style: italic;
+}
+#reductorDivLeft {
+    float: left;
+}
+#reductorDivRight {
+    margin-left: 500px;
+}
+table#searchTires td a.link {
+    display: block;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background: url('../img/ico_show_modify.png') 0 0 no-repeat;
+}
+
+
+
+
+/* *********************************
+           LEARN MODAL
+************************************/
+
+div.overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+div.overlay div.overlayContent {
+    position: relative;
+    width: 1020px;
+    height: 570px;
+    padding: 20px 0 0 40px;
+    margin: 150px auto;
+    background: #fff;
+    border: 2px #aaa solid;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    box-shadow: 3px 3px 8px #556;
+    -webkit-box-shadow: 3px 3px 8px #556;
+    -moz-box-shadow: 3px 3px 8px #556;
+}
+
+div.overlayContent div.loading {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff url('../img/loading_modify_2.gif') 50% 50% no-repeat;
+}
+
+div.modifyCloseButton {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: url('../img/close_button.png') 0 0 no-repeat;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+div.modifyCloseButton:hover {
+    background: url('../img/close_button_hover.png') 0 0 no-repeat;
+}
+div.modifyCloseButtonHover {
+    background: url('../img/close_button_hover.png') 0 0 no-repeat;
+    display: none;
+}
+
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: slategray;
+}
+.loadImg {
+    position: relative;
+    float: left;
+    width: 200px;
+    margin: 15% 45%;
+    z-index: 9999;
+}
+.loadImg img {
+    margin-left: 20px;
+}
+.loadBg {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+/* course */
+.courseH3 {
+    margin: 50px 0 10px 0
+}
+.courseContainer {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    color: midnightblue
+}
+.courseNow {
+    font-size: 26px;
+    color: #3758ff;
+}
+.courseAttention {
+    font-size: 12px
+}
+.courseAttention em:first-child {
+    color: crimson;
+}
+.courseButton {
+    clear: both;
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    color: midnightblue
+}
+
+/* catalog */
+.catalogAttention {
+    display: none;
+    border-top: 1px dotted #aaaaaa;
+    padding-top: 20px;
+}
+.catalogAttention span {
+    color: crimson;
+}
+
+/* search */
+.borderLine {
+    width: 80%;
+    border-bottom: 1px dotted lightsteelblue
+}
+.searchAnyValue {
+    color: #3758ff;
+}

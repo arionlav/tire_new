@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - tires@localhost" uuid="3ed8424f-6daa-4db5-b948-8b765aa748f7">
+    <database-info product="MySQL" version="5.5.41-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="tires"/>
+    <table name="_model" schema="" catalog="tires" type="TABLE">
+      <column name="id_model" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LzQvtC00LXQu9C4" autoIncrement="true"/>
+      <column name="name_model" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDQvNC+0LTQtdC70Lg="/>
+      <column name="own_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JPRgNGD0L/Qv9CwINGC0L7QstCw0YDQsCjRiNC40L3Riywg0LTQuNGB0LrQuCk="/>
+      <primary-key name="PRIMARY" columns="id_model"/>
+    </table>
+    <table name="_own" schema="" catalog="tires" type="TABLE">
+      <column name="id_own" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0L/RgNC40L3QsNC00LvQtdC20L3QvtGB0YLQuCDRgtC+0LLQsNGA0LA=" autoIncrement="true"/>
+      <column name="name_own" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDQs9GA0YPQv9C/0Ysg0YLQvtCy0LDRgNC+0LIo0YjQuNC90YssINC00LjRgdC60Lgp"/>
+      <primary-key name="PRIMARY" columns="id_own"/>
+    </table>
+    <table name="_tires_old" schema="" catalog="tires" type="TABLE">
+      <column name="id_tires" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0YjQuNC90Ys=" autoIncrement="true"/>
+      <column name="width_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0KjQuNGA0LjQvdCw"/>
+      <column name="height_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JLRi9GB0L7RgtCw"/>
+      <column name="radius_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0KDQsNC00LjRg9GB"/>
+      <column name="load_index_id" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0JjQvdC00LXQutGBINC90LDQs9GA0YPQt9C60Lgo0LzQvtC20L3QviDRgdC/0LjRgdC60L7QvCDRh9C10YDQtdC3ICIsIik="/>
+      <column name="speed_index_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQvdC00LXQutGBINGB0LrQvtGA0L7RgdGC0Lg="/>
+      <column name="brand_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JHRgNC10L3QtA=="/>
+      <column name="model_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JzQvtC00LXQu9GM"/>
+      <column name="inner_tire_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JrQsNC80LXRgNC90L7RgdGC0Yw="/>
+      <column name="season_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0KHQtdC30L7QvQ=="/>
+      <column name="exist" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0J3QsNC70LjRh9C40LU="/>
+      <column name="cost" sqlType="DECIMAL" precision="15" scale="2" nullable="false" jdbcType="3" remarks="0KbQtdC90LA="/>
+      <column name="currency_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JLQsNC70Y7RgtCw"/>
+      <column name="group_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JPRgNGD0L/Qv9CwINGC0L7QstCw0YDQsA=="/>
+      <column name="price_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0J/RgNCw0LnRgQ=="/>
+      <column name="price_list" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0J3QvtC80LXRgCDQu9C40YHRgtCwINC/0YDQsNC50YHQsA=="/>
+      <column name="data" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" remarks="0JLRgNC10LzRjyDQuNC30LzQtdC90LXQvdC40Lk="/>
+      <primary-key name="PRIMARY" columns="id_tires"/>
+    </table>
+    <table name="brand" schema="" catalog="tires" type="TABLE">
+      <column name="idBrand" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LHRgNC10L3QtNCw" autoIncrement="true"/>
+      <column name="nameBrand" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDQsdGA0LXQvdC00LA="/>
+      <primary-key name="PRIMARY" columns="idBrand"/>
+    </table>
+    <table name="camera" schema="" catalog="tires" type="TABLE">
+      <column name="idCamera" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LrQsNC80LXRgNC90L7RgdGC0Lg=" autoIncrement="true"/>
+      <column name="nameCamera" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDRgtC40L/QsA=="/>
+      <primary-key name="PRIMARY" columns="idCamera"/>
+    </table>
+    <table name="course" schema="" catalog="tires" type="TABLE">
+      <column name="idCourse" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nameCourse" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <primary-key name="PRIMARY" columns="idCourse"/>
+    </table>
+    <table name="gr" schema="" catalog="tires" type="TABLE">
+      <column name="idGroup" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LPRgNGD0L/Qv9GL" autoIncrement="true"/>
+      <column name="nameGroup" sqlType="VARCHAR" precision="64" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDQs9GA0YPQv9C/0Ys="/>
+      <primary-key name="PRIMARY" columns="idGroup"/>
+    </table>
+    <table name="height" schema="" catalog="tires" type="TABLE">
+      <column name="idHeight" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LLRi9GB0L7RgtGL" autoIncrement="true"/>
+      <column name="nameHeight" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0JLRi9GB0L7RgtCw"/>
+      <primary-key name="PRIMARY" columns="idHeight"/>
+    </table>
+    <table name="indexPower" schema="" catalog="tires" type="TABLE">
+      <column name="idIndexPower" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0L3QsNCz0YDRg9C30LrQuA==" autoIncrement="true"/>
+      <column name="nameIndexPower" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0JjQvdC00LXQutGBINC90LDQs9GA0YPQt9C60Lg="/>
+      <column name="Kg" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNCz0YDRg9C30LrQsCDQsiDQutCz"/>
+      <primary-key name="PRIMARY" columns="idIndexPower"/>
+      <index name="id_load" unique="false" columns="idIndexPower"/>
+      <index name="Ll" unique="false" columns="nameIndexPower,Kg"/>
+    </table>
+    <table name="indexSpeed" schema="" catalog="tires" type="TABLE">
+      <column name="idIndexSpeed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0L3QsNCz0YDRg9C30LrQuCDRgdC60L7RgNC+0YHRgtC4" autoIncrement="true"/>
+      <column name="nameIndexSpeed" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0JjQvdC00LXQutGB"/>
+      <column name="speed" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0JTQvtC/0YPRgdGC0LjQvNCw0Y8g0YHQutC+0YDQvtGB0YLRjCDQutC8L9GH"/>
+      <primary-key name="PRIMARY" columns="idIndexSpeed"/>
+    </table>
+    <table name="list" schema="" catalog="tires" type="TABLE">
+      <column name="idList" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0J3QvtC80LXRgCDQv9GA0LDQudGB0LA=" autoIncrement="true"/>
+      <column name="nameList" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="0JjQvNGPINC/0YDQsNC50YHQsA=="/>
+      <column name="city" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="post" sqlType="VARCHAR" precision="5000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="method" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="idForExcel" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" def="MA==" remarks="aWRGb3JFeGNlbA=="/>
+      <primary-key name="PRIMARY" columns="idList"/>
+    </table>
+    <table name="money" schema="" catalog="tires" type="TABLE">
+      <column name="idMoney" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0LLQsNC70Y7RgtGL" autoIncrement="true"/>
+      <column name="nameMoney" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" remarks="0J3QsNC30LLQsNC90LjQtSDQstCw0LvRjtGC0Ys="/>
+      <column name="buy" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3" remarks="0JrRg9GA0YEg0L/QvtC60YPQv9C60Lg="/>
+      <column name="sale" sqlType="DECIMAL" precision="10" scale="2" nullable="false" jdbcType="3" remarks="0JrRg9GA0YEg0L/RgNC+0LTQsNC20Lg="/>
+      <primary-key name="PRIMARY" columns="idMoney"/>
+    </table>
+    <table name="radius" schema="" catalog="tires" type="TABLE">
+      <column name="idRadius" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0YDQsNC00LjRg9GB0LA=" autoIncrement="true"/>
+      <column name="radius" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0KDQsNC00LjRg9GB"/>
+      <primary-key name="PRIMARY" columns="idRadius"/>
+    </table>
+    <table name="season" schema="" catalog="tires" type="TABLE">
+      <column name="idSeason" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0YHQtdC30L7QvdC90L7RgdGC0Lg=" autoIncrement="true"/>
+      <column name="nameSeason" sqlType="VARCHAR" precision="15" scale="0" nullable="false" jdbcType="12" remarks="0KHQtdC30L7QvSjQm9C10YLQviwg0JfQuNC80LAsINCS0YHQtdGB0LXQt9C+0L3QutCwKQ=="/>
+      <primary-key name="PRIMARY" columns="idSeason"/>
+    </table>
+    <table name="tires" schema="" catalog="tires" type="TABLE">
+      <column name="id" sqlType="MEDIUMINT UNSIGNED" precision="8" scale="0" nullable="false" jdbcType="4" remarks="0J3QvtC80LXRgCDRgdGC0YDQvtC60Lg=" autoIncrement="true"/>
+      <column name="list" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="0J/RgNCw0LnRgQ=="/>
+      <column name="str" sqlType="VARCHAR" precision="500" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JjRgdGF0L7QtNC90LDRjyDRgdGC0YDQvtC60LA="/>
+      <column name="width" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="0KjQuNGA0LjQvdCw"/>
+      <column name="height" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="0JLRi9GB0L7RgtCw"/>
+      <column name="radius" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="0KDQsNC00LjRg9GB"/>
+      <column name="indexPower" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JjQvdC00LXQutGBINC90LDQs9GA0YPQt9C60Lg="/>
+      <column name="indexSpeed" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JjQvdC00LXQutGBINGB0LrQvtGA0L7RgdGC0Lg="/>
+      <column name="brand" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JHRgNC10L3QtA=="/>
+      <column name="model" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JzQvtC00LXQu9GM"/>
+      <column name="camera" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JrQsNC80LXRgNCw"/>
+      <column name="season" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0KHQtdC30L7QvQ=="/>
+      <column name="isIt" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0J3QsNC70LjRh9C40LU="/>
+      <column name="price" sqlType="FLOAT" precision="12" scale="0" nullable="false" jdbcType="7" def="MA==" remarks="0KbQtdC90LA="/>
+      <column name="money" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JLQsNC70Y7RgtCw"/>
+      <column name="gr" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0JPRgNGD0L/Qv9Cw"/>
+      <column name="dateTime" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" remarks="0JTQsNGC0LA=" version="true"/>
+      <column name="other" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="0J/RgNC40LzQtdGH0LDQvdC40Y8="/>
+      <column name="priceMove" sqlType="FLOAT" precision="12" scale="0" nullable="true" jdbcType="7"/>
+      <column name="year" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="user_privilege" schema="" catalog="tires" type="TABLE">
+      <column name="idPrivilege" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="namePrivilege" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idPrivilege"/>
+    </table>
+    <table name="width" schema="" catalog="tires" type="TABLE">
+      <column name="idWidth" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="0JjQtNC10L3RgtC40YTQuNC60LDRgtC+0YAg0YjQuNGA0LjQvdGL" autoIncrement="true"/>
+      <column name="nameWidth" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12" remarks="0KjQuNGA0LjQvdCwINGI0LjQvQ=="/>
+      <primary-key name="PRIMARY" columns="idWidth"/>
+    </table>
+  </data-source>
+  <data-source name="MySQL - tires_security@localhost" uuid="9100501c-0297-4596-8e1b-e61571fa8bda">
+    <database-info product="MySQL" version="5.5.41-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="tires_security"/>
+    <table name="privilege" schema="" catalog="tires_security" type="TABLE">
+      <column name="idPrivilege" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="namePrivilege" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idPrivilege"/>
+    </table>
+    <table name="role" schema="" catalog="tires_security" type="TABLE">
+      <column name="idRole" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nameRole" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="idPrivilege" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idRole"/>
+    </table>
+    <table name="users" schema="" catalog="tires_security" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="dXNlcnMgaWQ=" autoIncrement="true"/>
+      <column name="login" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" def="J9Cd0L7QstGL0Lkg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GMJw==" remarks="bG9naW4gdXNlcg=="/>
+      <column name="email" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12" remarks="bWFpbA=="/>
+      <column name="password" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" remarks="cGFzcw=="/>
+      <column name="salt" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="c2FsdA=="/>
+      <column name="iterationCount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MTAw"/>
+      <column name="role" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+  <data-source name="tire_new_db" uuid="ac17ce37-1ecd-44f2-a832-aad6725cdc9f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

@@ -25,7 +25,7 @@ class Query
      *
      * @param string $dbName Database name
      */
-    function __construct($dbName = 'tires')
+    function __construct($dbName = 'tire_new')
     {
         App::$app->dbConnect($dbName);
         $this->db = App::$app->_db;

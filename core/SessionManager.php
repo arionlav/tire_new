@@ -70,7 +70,7 @@ class SessionManager
         $checkStr = \hash('sha256', $_SESSION['login'] . $_SERVER['HTTP_USER_AGENT'] . $_SESSION['id']);
 
         if (
-            $_SESSION['whoThat'] == $checkStr
+            $_SESSION['whoThat'] !== $checkStr
             && ! strpos($_SERVER{'REQUEST_URI'}, 'security/login')
         ) {
             static::destroySession();
